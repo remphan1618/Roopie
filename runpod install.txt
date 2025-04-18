@@ -1,0 +1,31 @@
+1------------------------------------------------------------------------------------------
+git clone https://github.com/norby777/Roop-Unleashed-Runpod.git
+cd Roop-Unleashed-Runpod
+2 Optional---------------------------------------------------------------------------------
+pip install virtualenv
+python -m venv venv
+source venv/bin/activate
+3------------------------------------------------------------------------------------------
+pip install -r requirements.txt
+apt-get update
+apt install ffmpeg -y
+pip install --force-reinstall pydantic==2.10.6
+python run.py
+
+Alternative--------------------------------------------------------------------------------
+git clone https://codeberg.org/Cognibuild/ROOP-FLOYD/
+cd ROOP-FLOYD
+-------------------------------------------------------------------------------------------
+pip install virtualenv
+python -m venv venv
+source venv/bin/activate
+-------------------------------------------------------------------------------------------
+pip install -r requirements.txt
+apt-get update
+apt install ffmpeg -y
+pip install --upgrade gradio --force
+pip install --upgrade fastapi pydantic
+pip install "numpy<2.0"
+pip install --force-reinstall pydantic==2.10.6
+pip install onnxruntime-gpu==1.19.0
+python run.py
